@@ -1,0 +1,87 @@
+/* Premium Modern App Style for mathiesonmoller.com */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #09090b; /* Ultra dark black */
+    color: #fafafa;
+}
+
+h1, h2, h3, h4, .app-header {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Glassmorphism containers */
+.glass-panel {
+    background: rgba(24, 24, 27, 0.6);
+    border: 1px solid rgba(63, 63, 70, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Neon Glow Accents */
+.neon-glow-rose {
+    box-shadow: 0 0 20px -3px rgba(244, 63, 94, 0.2);
+}
+
+.neon-glow-indigo {
+    box-shadow: 0 0 20px -3px rgba(99, 102, 241, 0.2);
+}
+
+/* Date Builder Interactive States */
+.builder-btn {
+    background: rgba(39, 39, 42, 0.5);
+    border: 1px solid rgba(63, 63, 70, 0.4);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.builder-btn:hover {
+    border-color: rgba(250, 250, 250, 0.3);
+    background: rgba(39, 39, 42, 0.8);
+}
+
+.builder-btn.active {
+    background: #fafafa;
+    color: #09090b;
+    border-color: #fafafa;
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(250, 250, 250, 0.15);
+}
+
+/* Custom Interactive Progress Bar Animations */
+@keyframes loadMeter {
+    from { width: 0%; }
+}
+
+.meter-fill {
+    animation: loadMeter 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Shake Animation for wrong code input */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.animate-shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Custom Scrollbar for modern dark mode */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #27272a;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f43f5e;
+}

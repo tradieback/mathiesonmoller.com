@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathieson Moller — Portfolio & Projects</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        stone: {
+                            950: '#1c1917',
+                            900: '#292524',
+                            800: '#44403c',
+                            300: '#d6d3d1',
+                            200: '#e7e5e4',
+                            100: '#f5f5f4',
+                            50: '#fafaf9',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-full flex flex-col justify-between selection:bg-stone-950 selection:text-white px-4 sm:px-8 py-6 sm:py-8 max-w-4xl mx-auto overflow-x-hidden">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="border-b border-stone-300/80 pb-6 mb-12 sm:mb-16 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div>
+            <a href="#" class="text-xl font-bold tracking-tight text-stone-950">Mathieson Moller</a>
+            <p class="text-[10px] text-stone-500 uppercase tracking-widest mt-0.5">Asset Registry & Portfolio</p>
+        </div>
+        <div class="flex items-center gap-6 text-xs font-semibold text-stone-600">
+            <a href="#about" class="hover:text-stone-950 transition-colors">About</a>
+            <a href="#metrics" class="hover:text-stone-950 transition-colors">Metrics</a>
+            <a href="#collaboration" class="hover:text-stone-950 transition-colors flex items-center gap-1.5 text-rose-600 hover:text-rose-700">
+                <i class="fa-solid fa-key"></i> Invite Access
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="space-y-6 mb-12 sm:mb-20">
+        <span class="text-[10px] font-bold text-stone-400 uppercase tracking-widest block">Introduction</span>
+        <h2 class="text-4xl sm:text-5xl font-semibold tracking-tight text-stone-950 leading-tight serif-font">
+            Building spaces, managing Wellington assets, and exploring the south coast.
+        </h2>
+        <p class="text-stone-600 max-w-2xl leading-relaxed text-sm sm:text-base">
+            This workspace documents my academic path in construction management, active Wellington property portfolios, and details my lifestyle pursuits. 
+        </p>
+    </section>
+
+    <!-- SECTION 1: ABOUT / WORK / LIFESTYLE (The Vibe Brief) -->
+    <section id="about" class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-stone-300/80 mb-12 sm:mb-20">
+        <div class="space-y-3">
+            <span class="text-xs font-semibold text-stone-400 uppercase tracking-widest">Section 01</span>
+            <h3 class="text-2xl font-bold text-stone-950 serif-font">Dossier Brief</h3>
+            
+            <!-- Avatar Frame -->
+            <div class="w-36 h-36 rounded-2xl border border-stone-300 overflow-hidden bg-stone-200 mt-4 shadow-sm">
+                <img src="me.jpg" alt="Mathieson" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover">
+                <div class="hidden w-full h-full flex flex-col items-center justify-center text-stone-400 text-center p-2 bg-stone-100">
+                    <i class="fa-solid fa-user-astronaut text-2xl mb-1 text-stone-300"></i>
+                    <span class="text-[9px]">me.jpg placeholder</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="md:col-span-2 space-y-6 text-sm text-stone-600 leading-relaxed">
+            <p>
+                I specialize in construction and property project management—which basically means I balance my time studying building structures at Massey and managing residential investments around Wellington. I really enjoy the building and asset side of things, but I keep plenty of time free outside of it.
+            </p>
+            <p>
+                When I'm off-site, I apply the same consistency to deadlifting at Les Mills, checking out live electronic gigs and music festivals, or driving down to the south coast bays. I built this quick page because simply handing over a phone number felt a bit basic, and I wanted to ask you out in a slightly more creative way.
+            </p>
+
+            <!-- Snapshots Grid -->
+            <div class="grid grid-cols-3 gap-2 pt-2">
+                <!-- Photo 1 -->
+                <div class="aspect-square bg-stone-200 rounded-xl overflow-hidden flex items-center justify-center relative group border border-stone-300">
+                    <img src="photo1.jpg" alt="Photo 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover">
+                    <div class="hidden w-full h-full flex flex-col items-center justify-center text-stone-400 text-center p-1 bg-stone-100">
+                        <i class="fa-solid fa-camera text-base mb-1"></i>
+                        <span class="text-[8px]">photo1.jpg</span>
+                    </div>
+                </div>
+                <!-- Photo 2 -->
+                <div class="aspect-square bg-stone-200 rounded-xl overflow-hidden flex items-center justify-center relative group border border-stone-300">
+                    <img src="photo2.jpg" alt="Photo 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover">
+                    <div class="hidden w-full h-full flex flex-col items-center justify-center text-stone-400 text-center p-1 bg-stone-100">
+                        <i class="fa-solid fa-camera text-base mb-1"></i>
+                        <span class="text-[8px]">photo2.jpg</span>
+                    </div>
+                </div>
+                <!-- Photo 3 -->
+                <div class="aspect-square bg-stone-200 rounded-xl overflow-hidden flex items-center justify-center relative group border border-stone-300">
+                    <img src="photo3.jpg" alt="Photo 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover">
+                    <div class="hidden w-full h-full flex flex-col items-center justify-center text-stone-400 text-center p-1 bg-stone-100">
+                        <i class="fa-solid fa-camera text-base mb-1"></i>
+                        <span class="text-[8px]">photo3.jpg</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: METRICS & SPEC SHEET (Meters & FAQs) -->
+    <section id="metrics" class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-stone-300/80 mb-12 sm:mb-20">
+        <div class="space-y-2">
+            <span class="text-xs font-semibold text-stone-400 uppercase tracking-widest">Section 02</span>
+            <h3 class="text-2xl font-bold text-stone-950 serif-font">Operational Metrics</h3>
+            <p class="text-xs text-stone-500">Self-assessments & structural specs</p>
+        </div>
+
+        <div class="md:col-span-2 space-y-8">
+            <!-- Progress Meters -->
+            <div class="space-y-4 text-xs">
+                <!-- Stat 1 -->
+                <div onclick="showStatDetails(1)" class="space-y-1.5 cursor-pointer group">
+                    <div class="flex justify-between font-semibold">
+                        <span class="text-stone-800 group-hover:text-stone-950 transition-colors">Date Quality Rating</span>
+                        <span class="text-stone-950 font-mono">5/5 Stars</span>
+                    </div>
+                    <div class="w-full bg-stone-200 h-2 rounded-full overflow-hidden">
+                        <div class="bg-stone-950 h-full w-[100%] meter-fill"></div>
+                    </div>
+                    <p id="stat-detail-1" class="text-[10px] text-stone-600 hidden leading-relaxed pl-2 pt-1 border-l border-stone-400">
+                        Guaranteed to pick a spot with good lighting, great coffee/drinks, and absolutely zero job-interview style questions.
+                    </p>
+                </div>
+
+                <!-- Stat 2 -->
+                <div onclick="showStatDetails(2)" class="space-y-1.5 cursor-pointer group">
+                    <div class="flex justify-between font-semibold">
+                        <span class="text-stone-800 group-hover:text-stone-950 transition-colors">Text Response Speed</span>
+                        <span class="text-stone-950 font-mono">92%</span>
+                    </div>
+                    <div class="w-full bg-stone-200 h-2 rounded-full overflow-hidden">
+                        <div class="bg-stone-950 h-full w-[92%] meter-fill"></div>
+                    </div>
+                    <p id="stat-detail-2" class="text-[10px] text-stone-600 hidden leading-relaxed pl-2 pt-1 border-l border-stone-400">
+                        Pretty fast replies, unless I'm deadlifting at the gym or locked in the university library.
+                    </p>
+                </div>
+
+                <!-- Stat 3 -->
+                <div onclick="showStatDetails(3)" class="space-y-1.5 cursor-pointer group">
+                    <div class="flex justify-between font-semibold">
+                        <span class="text-stone-800 group-hover:text-stone-950 transition-colors">Wellington Wind Damage</span>
+                        <span class="text-stone-950 font-mono">100%</span>
+                    </div>
+                    <div class="w-full bg-stone-200 h-2 rounded-full overflow-hidden">
+                        <div class="bg-stone-950 h-full w-[100%] meter-fill"></div>
+                    </div>
+                    <p id="stat-detail-3" class="text-[10px] text-stone-600 hidden leading-relaxed pl-2 pt-1 border-l border-stone-400">
+                        The Wellington wind wins every time. Expect a somewhat windswept look if we're meeting outdoors.
+                    </p>
+                </div>
+
+                <!-- Stat 4 -->
+                <div onclick="showStatDetails(4)" class="space-y-1.5 cursor-pointer group">
+                    <div class="flex justify-between font-semibold">
+                        <span class="text-stone-800 group-hover:text-stone-950 transition-colors">Fry-Stealing Risk</span>
+                        <span class="text-stone-950 font-mono">85%</span>
+                    </div>
+                    <div class="w-full bg-stone-200 h-2 rounded-full overflow-hidden">
+                        <div class="bg-stone-950 h-full w-[85%] meter-fill"></div>
+                    </div>
+                    <p id="stat-detail-4" class="text-[10px] text-stone-600 hidden leading-relaxed pl-2 pt-1 border-l border-stone-400">
+                        High risk. If you order fries, expect a small tax to be automatically charged.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQs -->
+            <div class="space-y-2 pt-4">
+                <h4 class="text-xs font-bold text-stone-400 uppercase tracking-widest mb-3">Project FAQs</h4>
+                <!-- FAQ 1 -->
+                <div class="bg-white border border-stone-300 rounded-xl overflow-hidden">
+                    <button onclick="toggleFAQ(1)" class="w-full flex items-center justify-between p-4 font-bold text-xs text-stone-800 hover:text-stone-950 focus:outline-none">
+                        <span>Why build a website just to ask me out?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-plus text-[10px] text-stone-950 transition-transform"></i>
+                    </button>
+                    <div id="faq-answer-1" class="hidden px-4 pb-4 text-[10px] text-stone-500 leading-relaxed">
+                        Because a standard text message is a bit boring, and I like building things. Plus, I wanted to make sure it made you smile.
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="bg-white border border-stone-300 rounded-xl overflow-hidden">
+                    <button onclick="toggleFAQ(2)" class="w-full flex items-center justify-between p-4 font-bold text-xs text-stone-800 hover:text-stone-950 focus:outline-none">
+                        <span>What's the catch?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-plus text-[10px] text-stone-950 transition-transform"></i>
+                    </button>
+                    <div id="faq-answer-2" class="hidden px-4 pb-4 text-[10px] text-stone-500 leading-relaxed">
+                        I talk about building layouts when I'm tired, I have a serious addiction to cinnamon buns, and I'll definitely try to steal your fries.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-white border border-stone-300 rounded-xl overflow-hidden">
+                    <button onclick="toggleFAQ(3)" class="w-full flex items-center justify-between p-4 font-bold text-xs text-stone-800 hover:text-stone-950 focus:outline-none">
+                        <span>What's the plan for a date?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-plus text-[10px] text-stone-950 transition-transform"></i>
+                    </button>
+                    <div id="faq-answer-3" class="hidden px-4 pb-4 text-[10px] text-stone-500 leading-relaxed">
+                        A casual, low-pressure coffee walk along the bays, or a drink at a cozy spot in town. Good music, easy conversation, and seeing if we click.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: COMPATIBILITY SCANNER (Mini-game) -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-stone-300/80 mb-12 sm:mb-20">
+        <div class="space-y-2">
+            <span class="text-xs font-semibold text-stone-400 uppercase tracking-widest">Section 03</span>
+            <h3 class="text-2xl font-bold text-stone-950 serif-font">Compatibility</h3>
+            <p class="text-xs text-stone-500">Run a feasibility & vibe check</p>
+        </div>
+
+        <div class="md:col-span-2 bg-white border border-stone-300 p-6 rounded-2xl space-y-6">
+            <div class="space-y-4 text-xs">
+                <!-- Q1 -->
+                <div class="space-y-2">
+                    <p class="font-semibold text-stone-800">1. Who handles the bill?</p>
+                    <div class="flex gap-2">
+                        <button onclick="setCalc('bill', 'me')" id="calc-bill-me" class="builder-btn py-2.5 px-3 rounded-lg text-[10px] flex-1">Mathieson (100% Equity)</button>
+                        <button onclick="setCalc('bill', 'split')" id="calc-bill-split" class="builder-btn py-2.5 px-3 rounded-lg text-[10px] flex-1">Mathieson (No splits allowed)</button>
+                    </div>
+                </div>
+                <!-- Q2 -->
+                <div class="space-y-2">
+                    <p class="font-semibold text-stone-800">2. Vibe Check Expectation?</p>
+                    <div class="flex gap-2">
+                        <button onclick="setCalc('vibe', 'fun')" id="calc-vibe-fun" class="builder-btn py-2.5 px-3 rounded-lg text-[10px] flex-1">Lots of laughs</button>
+                        <button onclick="setCalc('vibe', 'vfun')" id="calc-vibe-vfun" class="builder-btn py-2.5 px-3 rounded-lg text-[10px] flex-1">Incredibly Fun</button>
+                    </div>
+                </div>
+
+                <button onclick="runChemistryCalc()" class="w-full py-3.5 bg-stone-950 hover:bg-stone-900 text-stone-50 font-bold rounded-xl text-xs uppercase tracking-wider transition-all">
+                    Run Compatibility Scan
+                </button>
+
+                <!-- Calc Result container -->
+                <div id="calc-result" class="hidden bg-stone-50 border border-stone-200 p-4 rounded-xl text-center space-y-2 animate-fade-in">
+                    <div class="text-rose-600 font-bold text-xl tracking-wide"><span id="calc-percentage">0.0</span>% VIBE MATCH</div>
+                    <p class="text-[10px] text-stone-500">
+                        Project highly viable. Warning: 1.3% error margin is allocated to fry-stealing risk.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: PRIVATE INVITE / DECRYPT PORTAL (Integrated smoothly) -->
+    <section id="collaboration" class="pt-8 border-t border-stone-300/80 mb-12 sm:mb-20">
+        <!-- LOCK SCREEN (Default view in the layout stream) -->
+        <div id="lock-screen-section" class="bg-white border border-stone-300 p-8 sm:p-12 rounded-3xl text-center max-w-lg mx-auto shadow-sm">
+            <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-stone-100 text-stone-950 border border-stone-200 mb-4 animate-pulse">
+                <i class="fa-solid fa-envelope-open-text text-lg"></i>
+            </div>
+            <h3 class="text-xl font-bold text-stone-950 serif-font">Open Private Invitation</h3>
+            <p class="text-xs text-stone-500 max-w-xs mx-auto mt-2 mb-8 leading-relaxed">
+                This section contains a custom date proposal. Please enter the access code on your card to decrypt the details.
+            </p>
+            
+            <div class="space-y-4 max-w-xs mx-auto">
+                <input id="invite-code" type="text" placeholder="ENTER CODE" 
+                       class="w-full text-center px-4 py-3 rounded-xl border border-stone-300 bg-stone-50 focus:outline-none focus:ring-1 focus:ring-stone-950 focus:border-stone-950 uppercase font-mono text-sm tracking-widest text-stone-950 transition-all">
+                
+                <p id="error-message" class="text-rose-600 text-xs hidden font-semibold flex items-center justify-center gap-1.5">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <span>Code not found. Try code "TEST" to preview.</span>
+                </p>
+
+                <button id="unlock-btn" class="w-full py-3 px-4 bg-stone-950 hover:bg-stone-900 text-stone-50 text-xs font-semibold rounded-xl tracking-wider uppercase transition-colors shadow-sm active:scale-[0.98]">
+                    Decrypt Proposal
+                </button>
+            </div>
+        </div>
+
+        <!-- TERMINAL DECRYPT SCREEN (Simulated scanner) -->
+        <div id="decrypt-screen" class="hidden w-full max-w-lg mx-auto bg-stone-950 p-6 rounded-3xl border border-stone-900 text-left font-mono text-xs text-emerald-400 space-y-2 py-8 min-h-[200px] flex flex-col justify-between">
+            <div id="terminal-content" class="space-y-1">
+                <!-- Simulated rows injected via JavaScript -->
+            </div>
+            <div class="text-[10px] text-stone-500 text-center animate-pulse pt-4">
+                DECRYPTING ENVELOPE... PLEASE HOLD
+            </div>
+        </div>
+
+        <!-- UNLOCKED DATE BUILDER (Hidden by default) -->
+        <div id="profile-screen" class="hidden opacity-0 translate-y-8 transition-all duration-700 w-full max-w-lg mx-auto bg-white border border-stone-300 p-6 sm:p-8 rounded-3xl space-y-6">
+            <div class="border-b border-stone-200 pb-3 flex justify-between items-center">
+                <div>
+                    <span class="text-xs font-semibold text-rose-600 uppercase tracking-widest flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+                        Project 04 (Joint Venture)
+                    </span>
+                    <h4 class="text-lg font-bold text-stone-950 serif-font mt-1">Date Proposal Planner</h4>
+                </div>
+                <div class="text-[10px] text-stone-500 font-mono">UNLOCKED</div>
+            </div>
+
+            <!-- Personalized Greeting Quote -->
+            <div class="bg-stone-100 border-l-2 border-stone-900 p-4">
+                <p id="welcome-greeting" class="text-stone-850 text-xs font-semibold italic leading-relaxed">
+                    "Hey there, great meeting you. I'm glad we crossed paths."
+                </p>
+            </div>
+
+            <!-- STEP 1: BEVERAGE -->
+            <div class="space-y-2">
+                <span class="text-[10px] text-stone-500 uppercase font-bold tracking-wider">Step 1: Choose Fuel</span>
+                <div class="grid grid-cols-2 gap-2">
+                    <button onclick="setParam('beverage', 'a', 'Flat White ☕')" id="bev-a" class="builder-btn py-2.5 px-3 rounded-xl text-xs font-semibold text-stone-800">Flat White ☕</button>
+                    <button onclick="setParam('beverage', 'b', 'Gin & Tonic 🍸')" id="bev-b" class="builder-btn py-2.5 px-3 rounded-xl text-xs font-semibold text-stone-800">Gin & Tonic 🍸</button>
+                    <button onclick="setParam('beverage', 'c', 'Spicy Marg 🌶️')" id="bev-c" class="builder-btn py-2.5 px-3 rounded-xl text-xs font-semibold text-stone-800">Spicy Marg 🌶️</button>
+                    <button onclick="setParam('beverage', 'd', 'Water 💧')" id="bev-d" class="builder-btn py-2.5 px-3 rounded-xl text-xs font-semibold text-stone-800">Water (Hydrate) 💧</button>
+                </div>
+            </div>
+
+            <!-- STEP 2: BACKDROP -->
+            <div class="space-y-2">
+                <span class="text-[10px] text-stone-500 uppercase font-bold tracking-wider">Step 2: Choose Backdrop</span>
+                <div class="grid grid-cols-1 gap-2">
+                    <button onclick="setParam('backdrop', 'a', 'Coastal Walk 🌊')" id="back-a" class="builder-btn py-3 px-3 rounded-xl text-xs font-semibold text-stone-800 text-left flex justify-between items-center">
+                        <span>Coastal Walk 🌊</span>
+                        <span class="text-[9px] text-stone-500">High Wind Risk</span>
+                    </button>
+                    <button onclick="setParam('backdrop', 'b', 'Cozy Corner Booth 🕯️')" id="back-b" class="builder-btn py-3 px-3 rounded-xl text-xs font-semibold text-stone-800 text-left flex justify-between items-center">
+                        <span>Cozy Corner Booth 🕯️</span>
+                        <span class="text-[9px] text-stone-500">Classy Vibe</span>
+                    </button>
+                    <button onclick="setParam('backdrop', 'c', 'Wildcard Surprise 🎲')" id="back-c" class="builder-btn py-3 px-3 rounded-xl text-xs font-semibold text-stone-800 text-left flex justify-between items-center">
+                        <span>Wildcard Surprise 🎲</span>
+                        <span class="text-[9px] text-stone-500">High Reward</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- STEP 3: TIMING -->
+            <div class="space-y-2">
+                <span class="text-[10px] text-stone-500 uppercase font-bold tracking-wider">Step 3: Choose Timing</span>
+                <div class="grid grid-cols-3 gap-2">
+                    <button onclick="setParam('timing', 'a', 'Mid-week')" id="time-a" class="builder-btn py-3 px-1 rounded-xl text-[10px] font-semibold text-stone-800">Mid-week</button>
+                    <button onclick="setParam('timing', 'b', 'Friday')" id="time-b" class="builder-btn py-3 px-1 rounded-xl text-[10px] font-semibold text-stone-800">Friday</button>
+                    <button onclick="setParam('timing', 'c', 'Sunday')" id="time-c" class="builder-btn py-3 px-1 rounded-xl text-[10px] font-semibold text-stone-800">Sunday</button>
+                </div>
+            </div>
+
+            <!-- LIVE CHAT BUBBLE PREVIEW -->
+            <div class="bg-stone-50 border border-stone-200 p-4 rounded-2xl space-y-2">
+                <div class="flex justify-between items-center border-b border-stone-200 pb-2">
+                    <span class="text-[9px] text-stone-400 font-bold uppercase tracking-wider">SMS Payload Preview</span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-stone-900 animate-pulse"></span>
+                </div>
+                <div class="flex justify-end pt-1">
+                    <div class="bg-stone-950 text-stone-50 rounded-2xl rounded-tr-sm py-2.5 px-4 text-xs max-w-[85%] leading-relaxed shadow-sm">
+                        <p id="sms-live-bubble">Select options above to compile the date proposal...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA BUTTON -->
+            <div id="cta-container" class="hidden transition-all duration-300 scale-95 opacity-0">
+                <button id="send-sms-btn" onclick="sendSMS()" 
+                        class="w-full py-4 px-6 bg-stone-950 hover:bg-stone-900 text-stone-50 text-xs font-bold rounded-xl uppercase tracking-widest flex items-center justify-center gap-2 transition-all shadow-md active:scale-[0.98]">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Compile & Submit Proposal</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CHARACTER REFERENCES (Testimonials) -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-stone-300/80">
+        <div class="space-y-2">
+            <span class="text-xs font-semibold text-stone-400 uppercase tracking-widest">Section 05</span>
+            <h3 class="text-2xl font-bold text-stone-950 serif-font">Character References</h3>
+            <p class="text-xs text-stone-500">Bespoke testimonials</p>
+        </div>
+
+        <div class="md:col-span-2 space-y-3">
+            <div class="bg-white border border-stone-200 p-4 rounded-xl flex gap-3 shadow-sm">
+                <div class="text-amber-600 text-base shrink-0"><i class="fa-solid fa-star"></i></div>
+                <div>
+                    <p class="text-xs text-stone-600 italic">"A very handsome, well-behaved boy. 5/5 stars."</p>
+                    <p class="text-[9px] text-stone-400 font-bold uppercase tracking-wider mt-1">— Mum</p>
+                </div>
+            </div>
+
+            <div class="bg-white border border-stone-200 p-4 rounded-xl flex gap-3 shadow-sm">
+                <div class="text-amber-600 text-base shrink-0"><i class="fa-solid fa-star"></i></div>
+                <div>
+                    <p class="text-xs text-stone-600 italic">"Building a whole website just to ask someone out is high effort. 4.8/5."</p>
+                    <p class="text-[9px] text-stone-400 font-bold uppercase tracking-wider mt-1">— My Gym Bro</p>
+                </div>
+            </div>
+
+            <div class="bg-white border border-stone-200 p-4 rounded-xl flex gap-3 shadow-sm">
+                <div class="text-amber-600 text-base shrink-0"><i class="fa-regular fa-star"></i></div>
+                <div>
+                    <p class="text-xs text-stone-600 italic">"Hairstyle destroyed within 3 seconds of stepping outside. 0/5."</p>
+                    <p class="text-[9px] text-stone-400 font-bold uppercase tracking-wider mt-1">— Wellington Wind</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 text-center text-xs text-stone-400 border-t border-stone-300/80 mt-16">
+        <p>&copy; 2026 Mathieson Moller. All rights reserved. Invite access required for private proposals.</p>
+    </footer>
+
+    <!-- App JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
